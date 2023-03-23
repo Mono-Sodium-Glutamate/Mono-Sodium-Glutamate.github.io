@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #261e99;
   }
   
   .top-bar ul {
@@ -26,6 +26,6 @@
   }
   
   .top-bar li a:hover {
-    background-color: #ddd;
+    background-color: rgb(17, 14, 211)e99;
   }
   
