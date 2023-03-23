@@ -1,12 +1,32 @@
 .top-bar {
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #f1f1f1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo-container {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+  
+  .logo-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
   
   .top-bar ul {
+    display: flex;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -17,15 +37,64 @@
     float: left;
   }
   
-  .top-bar li a {
+  .top-bar a {
     display: block;
-    color: #333;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 11px 10px;
     text-decoration: none;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    color: #333;
+    transition: color 0.3s ease-in-out;
   }
   
-  .top-bar li a:hover {
+  .top-bar a:hover {
     color: #ddd;
+  }
+  
+  .header {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 275px;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .header-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .header-text h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .header-text p {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+  }
+  
+  .blink {
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
   }
   
