@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 
-<title>Monosodium Glutamate</title>
-
+  <title>Monosodium Glutamate</title>
+  
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
@@ -18,13 +18,14 @@
       <img src="https://i.ibb.co/pWgbLxv/msg-discord-avatar.png">
     </div>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Skills</a></li>
-      <li><a href="#">Experience</a></li>
-      <li><a href="#">Portfolio</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
     </ul>
   </div>
+  <section id="home">
   <div class="header home">
     <div class="header-content">
       <img src="https://i.ibb.co/pWgbLxv/msg-discord-avatar.png">
@@ -38,31 +39,30 @@
       <a class="social-button"><img src="https://i.ibb.co/MGPsSGb/discord.png" onclick="copyToClipboard('Monosodium Glutamate#4531')"></a>
         <script>
 		function copyToClipboard(text) {
-			// Create a temporary textarea element to copy the text
 			var tempTextArea = document.createElement("textarea");
 			tempTextArea.value = text;
 			document.body.appendChild(tempTextArea);
 
-			// Select and copy the text
 			tempTextArea.select();
 			document.execCommand("copy");
 
-			// Remove the temporary textarea
 			document.body.removeChild(tempTextArea);
-
-			// Alert the user that the text has been copied
 			alert('Copied "' + text + '" to your clipboard!');
 		}
 	</script>
 </div>
     </div>
   </div>
+  </section>
+  <section id="about">
   <div class="header about">
   <div class="header-content">
     <h2>About Me</h2>
     <p>I’m Monosodium Glutamate, but I go by the alias Drakon on Roblox. I’m a programmer with a passion for creating games and am constantly looking to improve. As of March 2023, I’ve been scripting on Roblox for around 4 years. </p>
   </div>
 </div>
+    </section>
+  <section id="skills">
   <div class="header skills">
   <div class="header-content">
     <h2>Skilled In</h2>
@@ -84,30 +84,34 @@
   </div>
   </div>
 </div>
+  </section>
+    <section id="experience">
+  <div class="experience-header">
+  <h2>Past Experience</h2>
+  </div>
   <div class="experience-section">
   <div class="box">
     <h2>Programmer</h2>
-    <h3><a href="https://metamethod.pt">MetaMethod</a></h3>
+    <h3><a href="https://metamethod.pt"><span class="color-loop">MetaMethod</span></a></h3>
     <div class="dates-area">Mar 2023 - Present</div>
     <ul>
-      <li>Bullet point 1</li>
-      <li>Bullet point 2</li>
-      <li>Bullet point 3</li>
+      <li>Currently assigned to Site 006</li>
     </ul>
   </div>
   <div class="box">
     <h2>Wave 2 Mentee</h2>
-    <h3><a href="https://docs.google.com/spreadsheets/d/1YQ3BKJNtDZwBh2lP3NSmz7aiVf0Ibuyj9L8R4hsX4eY/edit#gid=0">MetaMethod Mentorship Program</a></h3>
+    <h3><a href="https://docs.google.com/spreadsheets/d/1YQ3BKJNtDZwBh2lP3NSmz7aiVf0Ibuyj9L8R4hsX4eY/edit#gid=0"><span class="color-loop">MetaMethod Mentorship Program</span></a></h3>
     <div class="dates-area">Jan 2023 - Mar 2023</div>
     <ul>
-      <li>Bullet point 1</li>
-      <li>Bullet point 2</li>
-      <li>Bullet point 3</li>
+      <li>Learned several code styling guidelines and code micro optimizations</li>
+      <li>Solved two technical challenges</li>
+      <li>Got better at creating event based code</li>
+      <li>Learned more about DeltaTime and raycast usage</li>
     </ul>
   </div>
     <div class="box">
     <h2>Senior Programmer</h2>
-    <h3><a href="https://www.roblox.com/groups/7891469/Secure-Containment-Procedures-SCP-F#!/about">Descry Industries | MEZ: ZERO</a></h3>
+    <h3><a href="https://www.roblox.com/groups/7891469/Secure-Containment-Procedures-SCP-F#!/about"><span class="color-loop">Descry Industries | MEZ: ZERO</span></a></h3>
       <div class="dates-area">Sep 2020 - Mar 2023</div>
     <ul>
       <li>Learned to utilize new code patterns and packages to efficiently bring exciting features into the game</li>
@@ -118,7 +122,7 @@
   </div>
     <div class="box">
     <h2>Facilities Team Project Manager</h2>
-    <h3><a href="https://www.roblox.com/groups/1174414/The-Nighthawk-Imperium#!/about">The Nighthawk Imperium</a></h3>
+    <h3><a href="https://www.roblox.com/groups/1174414/The-Nighthawk-Imperium#!/about"><span class="color-loop">The Nighthawk Imperium</span></a></h3>
       <div class="dates-area">Aug 2021 - May 2022</div>
     <ul>
       <li>One of two project managers assigned to CE HQ v2</li>
@@ -129,7 +133,76 @@
   </div>
   <!-- add more boxes here as needed -->
 </div>
-  <!-- rest of your page content -->
+  </section>
+      <section id="portfolio">
+  <div class="portfolio">
+  <h1>Previous Works</h1>
+  <div class="portfolio-tabs">
+    <div class="tab active" data-tab="tab1">Roblox Ready or Not</div>
+    <div class="tab" data-tab="tab2">Gate</div>
+    <div class="tab" data-tab="tab3">Melee Staff</div>
+    <div class="tab" data-tab="tab4">Gun System</div>
+    <div class="tab" data-tab="tab5">Radio Chat System</div>
+    <div class="tab" data-tab="tab6">Loading Screen</div>
+    <div class="tab" data-tab="tab7">Inventory System</div>
+    <div class="tab" data-tab="tab8">Minimap</div>
+  </div>
+  <div class="portfolio-content">
+    <div class="tab-content active" data-tab="tab1">
+      <h2>Scuffed or Not</h2>
+      <h3>- January 2023 to Present -</h3>
+      <p>My latest hobby project would be the Ready or Not inspired small FPS game I'm currently working on. Please note that as this is actively being worked on this page will not be up to date on the current progress of the game. If you'd like a more up to date version, I occasionally publish changes <a href="https://www.roblox.com/games/11869224236/FPS-Game">to this Roblox game</a>. As of writing, it includes a door system with lock and trap mechanics, interaction UI, custom FPS Camera w/ anti wall clipping, various working HUD elements, and a hotbar UI that can be shown by pressing any 1-6 number key. The videos are best viewed in full screen.</p>
+      <iframe src="https://streamable.com/e/oh50vc" width="560" height="582" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://streamable.com/e/mi46pt" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://streamable.com/e/jf5i7k" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="tab-content" data-tab="tab2">
+      <h2>Gate Challenge Submission</h2>
+      <h3>- January 28, 2023 -</h3>
+      <p>This was my submission to the very first challenge of MetaMethod's Mentorship Program. The challenge involved creating a system where the vent on the right of a gate can be clicked until 50. Upon reaching 50 clicks, the gate would open, layer by layer.
+Additionally, there would be a ProximityPrompt to the vent that adds a text on the screen's bottom center saying "I should destroy this vent..." when close to it. I had to ensure the usage of ProximityPromptService, Sanity checks, TweenService, and formatting in code readibility & efficiency. The video is best viewed in full screen.</p>
+      <iframe src="https://streamable.com/e/d9hr3f" width="1000" height="563" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="tab-content" data-tab="tab3">
+      <h2>Traitor Town Type Melee Staff Challenge Submission</h2>
+      <h3>- February 2, 2023 -</h3>
+      <p>This was my submission to the second challenge of MetaMethod's Mentorship Program. The challenge involved making a staff play an animation when the first mouse button is clicked and the staff is equipped, using raycasts to detect a Humanoid being hit and applying damage serverside with sanity checks, using RunService.Heartbeat and DeltaTime to make particles emit every 2.5 seconds, and creating debug trails to visualize the melee raycasts.</p>
+      <iframe src="https://streamable.com/e/a55fr6" width="1000" height="562" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="tab-content" data-tab="tab4">
+      <h2>Gun System</h2>
+      <h3>- August 20, 2022 -</h3>
+      <p><a href="https://www.roblox.com/games/10661870537/Call-of-Boblox">Gun System Roblox Game</a></p>
+    </div>
+    <div class="tab-content" data-tab="tab5">
+      <h2>SCPF Radio Chat System</h2>
+      <h3>- NaN -</h3>
+      <p>NaN</p>
+      <video src="video3.mp4" controls></video>
+    </div>
+    <div class="tab-content" data-tab="tab6">
+      <h2>Loading Screen</h2>
+      <h3>- 2021 -</h3>
+      <p>A loading screen I made using Roact and Knit.</p>
+      <div style="width: 50%; height: 0px; position: relative; padding-bottom: 56.206%;"><iframe src="https://streamable.com/e/yx41to" frameborder="0" width="50%" height="50%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+    </div>
+    <div class="tab-content" data-tab="tab7">
+      <h2>Inventory System</h2>
+      <h3>- August 2021 -</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet nunc eu ipsum venenatis ultrices. Donec euismod blandit ligula, id bibendum nulla auctor id.</p>
+      <div style="width: 50%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/e/g8urdl" frameborder="0" width="50%" height="50%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+    </div>
+    <div class="tab-content" data-tab="tab8">
+      <h2>Minimap</h2>
+      <h3>- August 2021 -</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet nunc eu ipsum venenatis ultrices. Donec euismod blandit ligula, id bibendum nulla auctor id.</p>
+      <div style="width: 50%; height: 0px; position: relative; padding-bottom: 56.250%;"><iframe src="https://streamable.com/e/cf5dhc" frameborder="0" width="50%" height="50%" allowfullscreen style="width: 100%; height: 100%; position: absolute;"></iframe></div>
+    </div>
+  </div>
+</div>
+        </section>
+
+  <!-- rest of the page -->
 </body>
 
 </html>
