@@ -110,7 +110,7 @@
     font-size: 36px;
     margin: 0;
     color: #304FFE;
-    font weight: bolder;
+    font-weight: bolder;
   }
   
   .header-text p {
@@ -370,11 +370,11 @@
   }
   
   .tab-content h2 {
-    bottom-margin: 0;
+    margin-bottom: 0;
   }
   
   .tab-content h3 {
-    bottom-margin: 20;
+    margin-bottom: 20;
     opacity: 0.95;
     font-weight: normal;
   }
